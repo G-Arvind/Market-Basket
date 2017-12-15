@@ -1,0 +1,46 @@
+REPORT ON APPLYING THE APRIORI ALGORITHM
+
+1.CREATING THE SPARSE MATRIX
+  
+  1.1 After creating the sparse matrix we noticed that the dataset had 18383 transactions (rows) and 37086 items (columns) in sparse format.
+  
+  1.2 Each and every row contained  the Invoice Number and Description. i.e the name of the products which the customer bought.
+  
+  1.3 example of a row is givven below
+  
+      {536366,                                                                                           HAND WARMER UNION JACK,HAND WARMER RED POLKA DOT}      
+
+2.CHECKING FREQUENCY OF ITEMS BOUGHT  
+
+  2.1 We checked the frequency of a particular item.
+  
+  2.2 For example frequency of  COLOUR SPACEBOY PEN is found to be  0.0001631943 
+  
+  2.3 Bar graphs were plotted to check the most frequently bought items
+  
+  2.4 From the graph it was found that BLACK RECORD COVER FRAME was the most frequentlly bought item followed by CHILLI LIGHTS,RABBIT NIGHT LIGHT,WHITE HANGING HEART T-LIGHT HOLDER...
+  
+  
+3.THE APRIORI ALGORITHM
+
+  3.1 On apllying the apriori algorithm with support value 0.0002 and confidence 60% we generated 638 rules.
+  
+  3.2 With Increase in suypport value to 0.0005 it generated only 4 rules
+  
+  3.3 so support was kept as 0.0002
+  
+  3.4 then best associations where found out 
+  
+  3.5 the top association was {6 RIBBONS ELEGANT CHRISTMAS,                                                           6 RIBBONS RUSTIC CHARM}      => {6 RIBBONS EMPIRE} with 0.0002175923 support,0.8 confidence and 3676.6 lift.
+  
+  3.6 similarly lots of association are studied
+  
+  3.7 Then we found that there are 391 redundant rules 
+  
+  3.8 On removing those redundant rules we obtained 247 rules.
+  
+  3.9 various graphs are plotted.
+  
+4.CONCLUSION
+  
+  4.1 On seeing the various association rules intersting combo offers can be given.
